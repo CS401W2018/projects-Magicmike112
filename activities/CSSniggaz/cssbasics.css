@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#first {
+    color: red;
+}
+
+.second{
+    color: green;
+}
+bigger{
+    font-size: 24pt;
+}
+main .bigger{
+    font-family: jokerman;
+}
