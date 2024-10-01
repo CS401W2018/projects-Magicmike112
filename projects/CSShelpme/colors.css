@@ -1,0 +1,21 @@
+body{
+  font-family: Arial, sans-serif:'Courier New', Courier, monospace
+  color:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  font-size:Georgia, 'Times New Roman', Times, serif
+  backround-color: sans-serif
+}
+.emphasize { 
+    color:green
+}
+.deemphasize {
+    color:cadetblue
+}
+header {
+    background-color:dimgrey;
+    color: azure;
+    padding: 20px;
+}
+ul{
+    list-style-type: disc;
+    margin: 20px;
+}
