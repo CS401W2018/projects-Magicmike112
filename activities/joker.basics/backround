@@ -1,0 +1,12 @@
+body {
+font-family: Arial, Helvetica, sans-serif;
+color: aliceblue;
+background-image: url(niggaz.jpg);
+}
+nav a{
+    color: chocolate;
+}
+
+.cuurent {
+    color: cornflowerblue;
+}
