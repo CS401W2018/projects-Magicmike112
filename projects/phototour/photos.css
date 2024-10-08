@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: bisque; */
+    background-image: url("green.jpg");
+    color: rgb(102, 15, 216);
+}
+
+main.index{ 
+    background-size: 300px 400px;
+    background-repeat: no-repeat;
+    background-image: url("TC.jpg");
+    background-position: right;
+} 
