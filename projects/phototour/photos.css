@@ -5,9 +5,24 @@ body {
     color: rgb(102, 15, 216);
 }
 
+nav ul li{
+    text-decoration: none;
+    list-style: none;
+    
+}
+
 main.index{ 
     background-size: 300px 400px;
     background-repeat: no-repeat;
     background-image: url("TC.jpg");
     background-position: right;
 } 
+
+main ul li{
+    list-style: none;
+    list-style-image: url(bullet.png);
+}
+
+.current{
+    color: aliceblue;
+}

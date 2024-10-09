@@ -1,0 +1,17 @@
+body{
+    font-family: Arial, Helvetica, sans-serif
+}
+header{
+    background-color: grey;
+    width: 300px;
+    margin: 20px 30px;
+    margin-left:auto;
+}
+header h1{
+    margin-bottom: 0;
+}
+nav{
+    background-color: aliceblue;
+    height: 200px;
+    margin-top: 40px;
+}
