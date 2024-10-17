@@ -1,0 +1,29 @@
+body{
+
+}
+
+.container{
+    background-color: dodgerblue;
+    padding: spx;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-areas:
+    "header header header"
+    "iside main rside"
+    "footer footer footer";
+}
+.item{
+   background-color: burlywood;
+   border: thin solid #000;
+}
+.teamA{
+    grid-area: inside;
+}
+
+.iteamB{
+    grid-area: inside;
+}
+
+.iteamC{
+    grid-area: main;
+}
