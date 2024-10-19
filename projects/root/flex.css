@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+\.container {
+    display: flex;
+    flex-flow: nowrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.iteam {
+    background-color: aquamarine;
+    padding: 10px 5px;
+    width: 200px;
+}
