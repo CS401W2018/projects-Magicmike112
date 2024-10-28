@@ -28,8 +28,9 @@ header h1 {
 }
 
 nav{
-    background-color: blue;
+    background-color: rgb(255, 238, 0);
     display: flex;
+    justify-content:space-around
 }
 
 nav a {
@@ -45,12 +46,30 @@ nav a:hover {
 
 }
 
-row {
+.row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.card {
+.beach {
     width: 200%;
+}
+.beach img {
+    width: 100;
+}
+@media only screen and (max-width:600px) {
+   nav {
+   flex-direction: column;
+   }
+   nav a {
+    border-bottom: thin solid #fff;
+   }
+   .beach {
+    width: 100%;
+    margin: auto 10px;
+   }
+   .main-beach {
+    order: -1;
+   }
 }
