@@ -1,0 +1,19 @@
+.schedule {
+    margin: 5px auto;
+    border: thin solid #000;
+    border-spacing: 10px;
+    
+}
+.schedule td {
+    border: thin solid #000
+}
+.schedule th {
+    border: thin solid #000
+}
+.schedule thead {
+    background-color: blue;
+    color: cornsilk;
+}
+.schedule tbody tr {
+    background-color: #ccc;
+}
