@@ -1,0 +1,22 @@
+body {
+     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+table {
+    margin: 10px auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+thead {
+    background-color: blueviolet;
+    color: beige;
+}
+ tbody tr:nth-child(even){
+background-color: #bbb;
+}
+ tfoot {
+    background-color: darkblue;
+    color: white;
+}
+.wrapper {
+    display:flex;
+}
