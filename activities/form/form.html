@@ -12,31 +12,57 @@
     </header>
     <main>
         <form action="processing.html" method="get">
-            First Name:<input type="text" name="first"><br>
-            Last Name:<input type="text" name="last"><br>
+            <fieldset>
+            <div class="form-row">
+            <label for="fname"></label> First Name:<input type="text" name="first"><br></label>
+            Last Name: <input type="text" name="last"><br>
+            </div>
+
+            <div class="form-row">
             password: <input type="text" name="password"><br>
-            input
+            </div>
+            <div class="form-row">
             <input type="checkbox" name="remeber">remeber me <br>
+            </div>
+            <div class="form-row">
             <input type="submit"><br>
+            </div>
+            <div class="form-row">
            Grade <input type="radio" value="sopohmore"> freshman <br>
            <input type="radio" value="sopohmore"> sophomore <br>
+           </div>
+           <div class="form-row">
             <input type="radio" value="sopohmore"> junior <br>
             <input type="radio" value="sopohmore"> senior <br>
+            </div>
+            <select name="state" id="state"></select>
             <option value="blank"></option>
-            <option value="Hawaii">Hawaii</option>
-            <option value="california">California</option>
-            <option value="Utah">Utah</option>
-            <option value="Colorado">colorado</option>
-            select
-            <h3>The form tag has an "action" attribute. What does it do?</h3>
-            <p>Specifies the URL where the form data will be sent for processing when the form is submitted.</p>
-            <h3>The form tag has a "method" attribute. What does it do?</h3>
-            <p>Specifies the HTTP method the browser should use to send the form data.</p>
-            <h3>POST vs GET:</h3>
-            <p>GET: Sends form data in the URL, visible to the user. Typically used for fetching data.</p>
-            <p>POST: Sends form data in the request body, not visible to the user. Typically used for submitting data that changes the server's state.</p>
-            
+            <option value="CA">california</option>
+            <option value="HI">Hawaii</option>
+            <option value="UT">Utah</option>
+           </select>
+           </div>
+           <div class="form-row">
+            <label for="comments">comments</label>
+            <textarea name="comments" id="comments"></textarea>
+        </div>
+           <div class="check row">
+           <div class="form row">comments</label>
+           <label><input type="radio" name="class" value="freshman">freshman</label>
+           <label><input type="radio" name="class" value="sophomore">sopohmore</label>
+           </div>
+           <div class="form-row">
+            <div class="spacer"></div>
+            <input type="submit">
+            </div>
+            </fieldset> 
         </form>
+        <h1>What are different ways to style your form?</h1>
+        <p>grid, flexbox, inline-block, and floats.</p>
+        <h1>Why does the professor like to use flex?</h1>
+        <p>flexible and easy to use layout system</p>
+         
+            
     </main>
     <footer>
         <p>&copy; 2024 Michael L.K. Henyan</p>
