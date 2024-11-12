@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <link rel="stylesheet" href="hawaiian.css">
+</head>
+<body>
+
+    <header>
+        <h1>web design</h1>
+    </header>
+    <main>
+        <form action="processing.html" method="get">
+            <legend>Enjoy my profile</legend>
+            <fieldset>
+                <div class="form-row">
+                    <label for="fname">First Name:</label>
+                    <input type="text" name="first">
+                    <label for="Lname"> Last Name:</label>
+                    <input type="text" name="last">
+                </div>
+            </fieldset>
+            <div class="form-row">
+                <label for="password"> password:</label>
+                <input type="password" name="password"><br>
+                <label for="email">email</label>
+                <input type="email">
+                <label for="phone">phone</label>
+                <input type="phone">
+            </div>
+            <div class="form-row">
+            </div>
+            <div class="form-row">
+            </div>
+            <div class="form-row">
+                <label for="checkbox">Please check the following if you agree to these terms </label>
+                <input type="checkbox"> 
+           </div>
+            <div class="form-row">
+            
+                <label for="">sex</label><br>
+                <label for="">male</label>
+                <input type="radio" value="sex"> 
+                <label for="">female</label>
+                <input type="radio" value="sex"> <br>
+            </div>
+            <div class="form-row">
+            <label for="state">Hawaii</label>
+                <select name="state" id="state">
+                    <option value="blank" label="blank"></option>
+                    <option value="CA">california</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="UT">Utah</option>
+            </select>
+           </div>
+           <div class="form-row">
+            <label for="comments">comments</label>
+            <textarea name="comments" id="comments"></textarea>
+        </div>
+           <div class="check row"></div>
+           <div class="form row"></div>
+           <div class="form-row">
+            <div class="spacer"></div>
+            <input type="submit">
+            </div>
+           </form>
+            </main>
+        <footer>
+            <p>&copy;2024 Michael L.K. Henyan</p>
+        </footer>
+       
+</body>
+</html>
