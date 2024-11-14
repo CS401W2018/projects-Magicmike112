@@ -11,11 +11,11 @@
         <h1>web design</h1>
     </header>
     <main>
-        <form action="processing.html" method="get">
+        <form action="processing.html" method="get" id="myform">
             <fieldset>
             <div class="form-row">
             <label for="fname"></label> First Name:<input type="text" name="first"><br></label>
-            Last Name: <input type="text" name="last"><br>
+            Last Name: <input id="fname" id="lname" type="text" name="last"><br>
             </div>
 
             <div class="form-row">
@@ -57,15 +57,32 @@
             </div>
             </fieldset> 
         </form>
-        <h1>What are different ways to style your form?</h1>
-        <p>grid, flexbox, inline-block, and floats.</p>
-        <h1>Why does the professor like to use flex?</h1>
-        <p>flexible and easy to use layout system</p>
-         
-            
+       <h3> What is JavaScript?</h3>
+        <h3> How did it get its name?</h3>
+        <h3>What are the two ways you can run JavaScript?</h3>
+        <h3> was the most popular front-end js library?</h3>
+        <h3>What is the most popular front-end js library today?</h3>
     </main>
     <footer>
         <p>&copy; 2024 Michael L.K. Henyan</p>
     </footer>
+    <script>
+        document.getElementById('myForm').addEventListener('submit',function(event){
+            event.preventDefault();
+            const firstname = document.getElementbyid ('fname')
+            const lastname = document.getElementbyid ('Lname')
+            const formdata = {
+                fname: firstname,
+                lname: lastname,
+            }
+            if(!firstname ||!lastname) {
+                alert ("you sum=bmitted the form!")
+                return;
+            }
+            console.log (formdata);
+            alert("you submitted")
+        
+        })
+    </script>
 </body>
 </html>
