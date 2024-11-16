@@ -11,6 +11,7 @@
         <h1>web design</h1>
     </header>
     <main>
+        <div id="message">
         <form action="processing.html" method="get" id="myform">
             <fieldset>
             <div class="form-row">
@@ -57,32 +58,14 @@
             </div>
             </fieldset> 
         </form>
-       <h3> What is JavaScript?</h3>
-        <h3> How did it get its name?</h3>
-        <h3>What are the two ways you can run JavaScript?</h3>
-        <h3> was the most popular front-end js library?</h3>
-        <h3>What is the most popular front-end js library today?</h3>
+       <h3>what is ajax</h3>
+       <p>AJAX is a way for websites to communicate with a server in the backround without needing to reload the entire page</p>
+       <h3>Why do you put your JS Code in a separate file?</h3>
+        <p>keeps things organized, reuses code, and easier to fix</p>
     </main>
     <footer>
         <p>&copy; 2024 Michael L.K. Henyan</p>
     </footer>
-    <script>
-        document.getElementById('myForm').addEventListener('submit',function(event){
-            event.preventDefault();
-            const firstname = document.getElementbyid ('fname')
-            const lastname = document.getElementbyid ('Lname')
-            const formdata = {
-                fname: firstname,
-                lname: lastname,
-            }
-            if(!firstname ||!lastname) {
-                alert ("you sum=bmitted the form!")
-                return;
-            }
-            console.log (formdata);
-            alert("you submitted")
-        
-        })
-    </script>
+   <script src="form.js"></script>
 </body>
 </html>
