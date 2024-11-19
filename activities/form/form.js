@@ -1,7 +1,7 @@
 document.getElementById('myform').addEventListener('submit',function(event){
     event.preventDefault();
-    const firstname = document.getElementbyId ('fname')
-    const lastname = document.getElementbyId ('Lname')
+    const firstname = document.getElementById ('fname')
+    const lastname = document.getElementById ('Lname')
     const formdata = {
         fname: firstname,
         lname: lastname,
