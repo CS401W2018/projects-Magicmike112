@@ -1,0 +1,44 @@
+body { 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:antiquewhite
+}
+header h1{
+    color: white; /* Text color */
+    background-color: #FF6347; /* Tomato background color */
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    font-size: 3em; /* Make the title larger */
+}
+<style>
+    nav {
+        display: flex; /* Enables flexbox for side-by-side layout */
+        align-items: center; /* Aligns images and content vertically */
+        justify-content: center; /* Centers the content horizontally */
+        gap: 20px; /* Adds space between images */
+    }
+
+    /* Limiting the width of images inside the nav */
+nav img {
+    max-width: 400px; /* Sets a maximum width */
+    width: 100%; /* Makes sure it scales responsively within the max-width */
+    height: auto; /* Maintains aspect ratio */
+    border: 2px solid #ccc; /* Optional: Adds a subtle border for alignment clarity */
+}
+
+/* Optional: Control images globally (not just in nav) */
+img {
+    max-width: 80%; /* Limits the image width to 80% of its container */
+    height: auto; /* Ensures the aspect ratio is maintained */
+}
+/* For small screens */
+@media (max-width: 600px) {
+    nav img {
+        max-width: 100%; /* Full width on smaller screens */
+    }
+
+    img {
+        max-width: 100%; /* Makes sure other images don't exceed their container's width */
+    }
+}
