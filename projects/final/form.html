@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Wally's Smokehouse</title>
+    <link rel="stylesheet" href="final.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="content.html">Home Page</a></li>
+            <li><a href="food.html">Food Options</a></li>
+            <li><a href="price.html">Pricing Details</a></li>
+            <li><a class="current" href="form.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Get in Touch!</h2>
+        <p>If you have any questions, feel free to call us at <strong>(808)-282-0099</strong> or use the form below to send us a message.</p>
+        <form action="process_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="order">Order Inquiry:</label>
+            <textarea id="order" name="order" rows="4" required></textarea>
+            
+            <label for="pickup">Preferred Pickup Date:</label>
+            <input type="date" id="pickup" name="pickup" required>
+            
+            <button type="submit">Submit</button>
+            <img src="smoke.jpeg" alt="Smoked meats" style="width: 100%; max-width: 500px; display: block; margin: 20px auto;">
+            <form action="backend/process_form.php" method="post">
+
+
+        </form>
+    </main>
+    <footer>
+        <p>Call us at: <strong>(808)-282-0099 </p>
+        &copy; 2024 Michael L.K. Henyan
+    </footer>
+</body>
+</html>
