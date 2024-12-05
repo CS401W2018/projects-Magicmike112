@@ -13,38 +13,49 @@
     <nav>
         <ul>
             <li><a href="content.html">Home Page</a></li>
+            <li><a href="woodvsoil.html">Information About Smokers</a></li>
             <li><a href="food.html">Food Options</a></li>
+            <li><a href="christmas.html">available now</a></li>
             <li><a href="price.html">Pricing Details</a></li>
             <li><a class="current" href="form.html">Contact Us</a></li>
-            <li><a href="reference.html">references</a></li>
         </ul>
     </nav>
     <main>
-        <h2>Get in Touch!</h2>
+        <h2>We’d Love to Hear from You!</h2>
         <p>If you have any questions, feel free to call us at <strong>(808)-282-0099</strong> or use the form below to send us a message.</p>
-        <form action="process_form.php" method="post">
+        
+        <!-- Contact Form -->
+        <form id="contactForm" action="submit_form.php" method="POST">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" placeholder="Your Name" required aria-label="Enter your name">
             
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" placeholder="Your Email Address" required aria-label="Enter your email address">
             
             <label for="order">Order Inquiry:</label>
-            <textarea id="order" name="order" rows="4" required></textarea>
+            <textarea id="order" name="order" rows="4" placeholder="Your Order Details" required aria-label="Provide details of your order"></textarea>
             
             <label for="pickup">Preferred Pickup Date:</label>
-            <input type="date" id="pickup" name="pickup" required>
+            <input type="date" id="pickup" name="pickup" required aria-label="Select your preferred pickup date">
             
             <button type="submit">Submit</button>
-            <img src="smoke.jpeg" alt="Smoked meats" style="width: 100%; max-width: 500px; display: block; margin: 20px auto;">
-
-
-
         </form>
+        
+        <!-- Confirmation Message -->
+        <div id="confirmation" style="display: none;">
+            <h2>Thank you for your submission!</h2>
+            <p><strong>Name:</strong> <span id="confName"></span></p>
+            <p><strong>Email:</strong> <span id="confEmail"></span></p>
+            <p><strong>Order Inquiry:</strong> <span id="confOrder"></span></p>
+            <p><strong>Pickup Date:</strong> <span id="confPickup"></span></p>
+        </div>
     </main>
     <footer>
-        <p>Call us at: <strong>(808)-282-0099 </p>
-        &copy; 2024 Michael L.K. Henyan
+        <p>Call us at: <strong>(808)-282-0099</strong></p>
+        <p>&copy; 2024 Michael L.K. Henyan</p>
     </footer>
+
+    <!-- Link to your JavaScript file -->
+    <script src="form-handler.js"></script>
 </body>
 </html>
